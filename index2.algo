@@ -1,0 +1,13 @@
+Function dot_product_func(v1, v2 : Array of Float) : Float
+    ps := 0
+    For i from 0 to v1.length - 1:
+        ps := ps + (v1[i] * v2[i])
+    Return ps
+End
+
+Algorithm: CheckOrthogonalityWithFunction
+    For each pair of vectors in n_pairs:
+        If dot_product_func(vector1, vector2) == 0 Then
+            Print "Vectors are orthogonal"
+        Else
+            Print "Vectors are not orthogonal"
