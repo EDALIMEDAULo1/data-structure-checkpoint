@@ -1,0 +1,18 @@
+Algorithm: SumDistinctElements
+Input: Set1, Set2 (Arrays)
+Output: Sum (Integer)
+
+1. Initialize sum := 0
+2. For each element 'i' in Set1:
+    - Found := False
+    - For each element 'j' in Set2:
+        - If Set1[i] == Set2[j] Then Found := True
+    - If Found == False Then sum := sum + Set1[i]
+
+3. For each element 'i' in Set2:
+    - Found := False
+    - For each element 'j' in Set1:
+        - If Set2[i] == Set1[j] Then Found := True
+    - If Found == False Then sum := sum + Set2[i]
+
+4. Return sum
